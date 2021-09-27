@@ -1,0 +1,497 @@
+#Stop word list from Brizzio https://gist.github.com/alopes/5358189
+uma
+sobre
+acima
+através
+depois de
+novamente
+contra
+todos
+quase
+sozinho
+ao longo
+já
+além disso
+apesar
+sempre
+entre
+a
+e
+outro
+qualquer
+qualquer pessoa
+qualquer um
+qualquer coisa
+qualquer lugar
+está
+área
+areas
+por aí
+como
+pergunte
+perguntei
+perguntando
+pergunta
+a 
+longe
+b
+de volta
+apoiado
+apoio
+costas
+estar
+passou a ser
+porque
+tornar-se
+torna-se
+fui
+antes
+começasse
+atrás
+ser
+seres
+melhor
+melhor
+entre
+grande
+ambos
+mas
+por
+c
+veio
+posso
+não podes
+caso
+casos
+certo
+certamente
+claro
+claramente
+venha
+poderia
+d
+fez
+diferir
+diferente
+diferentemente
+faz
+faz
+feito
+baixa
+abatido
+derrubada
+baixos
+durante
+e
+cada
+cedo
+ou
+fim
+terminou
+final
+termina
+o suficiente
+até
+uniformemente
+sempre
+cada
+todo o mundo
+todos
+tudo
+em toda parte
+f
+face
+rostos
+facto
+factos
+longe
+sentido
+poucos
+encontrar
+encontra
+primeiro
+para
+quatro
+de
+cheio
+totalmente
+mais distante
+promovido
+promovendo
+promove
+g
+deu
+geral
+geralmente
+pegue
+fica
+dar
+dado
+dá
+vai
+indo
+boa
+mercadorias
+obteve
+ótimo
+maior
+maior
+grupo
+agrupado
+agrupamento
+grupos
+h
+teve
+tem
+ter
+tendo
+ele
+dela
+aqui
+ela própria
+alto
+superior
+maior
+ele
+ele mesmo
+dele
+como
+contudo
+eu
+e se
+importante
+em
+interesse
+interessado
+interessante
+interesses
+para dentro
+é
+isto
+está
+em si
+j
+somente
+k
+manter
+mantém
+tipo
+sabia
+conhecer
+conhecido
+sabe
+eu
+ampla
+largamente
+último
+mais tarde
+mais recentes
+menos
+menos
+deixei
+vamos deixar
+gostar
+provável
+longo
+mais longo
+mais longo
+m
+fez
+faço
+fazer
+homem
+muitos
+maio
+mim
+membro
+membros
+homens
+poderia
+mais
+a maioria
+na maioria das vezes
+sr
+sra
+muito de
+devo
+minha
+eu mesmo
+n
+necessário
+precisar
+necessário
+precisando
+necessidades
+nunca
+novo
+mais recente
+o mais novo
+próximo
+não
+ninguém
+nada
+agora
+lugar algum
+número
+números
+o 
+do
+fora
+frequentemente
+velho
+mais velho
+mais antigo
+em
+uma vez
+um
+só
+abrir
+aberto
+abertura
+abre
+ou
+ordem
+encomendado
+encomenda
+encomendas
+de outros
+outras
+nosso
+fora
+sobre
+p
+parte
+se separaram
+despedida
+partes
+por
+possivelmente
+lugar, colocar
+locais
+ponto
+apontou
+apontando
+pontos
+possível
+presente
+apresentado
+apresentar
+presentes
+problema
+problemas
+colocar
+coloca
+q
+bastante
+r
+em vez
+realmente
+certo
+sala
+quartos
+s
+disse
+mesmo
+serra
+dizer
+diz
+segundo
+segundos
+vejo
+parece
+parecia
+aparente
+parece
+vê
+de várias
+deve
+ela
+devemos
+exposição
+mostrou
+mostrando
+shows
+lado
+lados
+desde a
+pequeno
+menor
+menor
+assim
+alguns
+alguém
+alguém
+alguma coisa
+algum lugar
+estado
+estados
+ainda
+tal
+certo
+t
+leva
+ocupado
+do que
+naquela
+a
+seus
+eles
+então
+lá
+assim sendo
+estes
+eles
+coisa
+coisas
+pensar
+acha
+isto
+essa
+apesar
+pensamento
+pensamentos
+três
+através
+portanto
+para
+hoje
+juntos
+também
+tomou
+em direção a
+virar
+virou
+girando
+voltas
+dois
+você
+debaixo
+até
+acima
+sobre
+nos
+usar
+usava
+usa
+v
+muito
+w
+quer
+mil
+milhões
+procurado
+querendo
+quer
+estava
+caminho
+maneiras
+nós
+bem
+poços
+foi
+estavam
+que
+quando
+onde
+se
+qual
+enquanto
+quem
+todo
+de quem
+porque
+vai
+com
+dentro
+sem
+trabalhos
+trabalhado
+trabalhando
+trabalho
+seria
+x
+y
+ano
+anos
+ainda
+você
+jovem
+mais jovem
+mais jovem
+seu
+sua
+z
+compartilhar
+linkthese
+sou
+não são
+abaixo
+não pode
+não podia
+não fez
+não faz
+fazendo
+não faça
+não tinha
+não tem
+não tem
+ele tinha
+inferno
+ele é
+aqui está
+dela
+como está
+identidade
+eu vou
+eu  estou
+eu tenho
+não é
+está
+vamos
+não deve
+nem
+deveria
+nosso
+nós mesmos
+próprio
+shan't
+ela
+ela vai
+ela é
+não deveria
+isso é
+deles
+si mesmos
+há
+eles tinham
+eles vão
+eles estão
+eles já
+não foi
+qua
+bem
+estamos
+nós temos
+não estava
+o que é
+quando é
+onde está a
+quem é
+o qual
+por que
+não vai
+não faria
+você gostaria
+você vai
+você é
+você tem
+você mesmo
+vocês mesmos
+no
+duas
+seis
+também
+estará
+estara
+pelo
+da
