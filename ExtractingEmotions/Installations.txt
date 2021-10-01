@@ -1,0 +1,4 @@
+If u have problem AttributeError: 'NoneType' object has no attribute 'group' do this (for windows):
+
+pip uninstall googletrans
+pip install googletrans==4.0.0rc1
