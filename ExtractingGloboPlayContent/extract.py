@@ -6,9 +6,13 @@ file = codecs.open("C:\\Users\\thier\\ExtractingGloboPlayContent\\series_comedia
 soup = BeautifulSoup(file.read(), 'html.parser')
 
 results = soup.find_all('span', attrs={'class': 'playkit-thumb__thumb-link-wrapper'})
-print(len(results))
-print(results[0:3])
-
+for series in results:
+    holder = series.find('a')
+    title = holder.get('title')
+    url_reference = "https://globoplay.globo.com/" + holder.get('href')
+    print(title)
+    print(url_reference)
+    print('\n')
 
 """
 url = "https://globoplay.globo.com/the-big-bang-theory/t/fhmwKtSNxG/detalhes/"
