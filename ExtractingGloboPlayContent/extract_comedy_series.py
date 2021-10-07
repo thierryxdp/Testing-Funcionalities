@@ -3,16 +3,17 @@ from bs4 import BeautifulSoup
 import codecs
 
 
-file = codecs.open("C:\\Users\\thier\\ExtractingGloboPlayContent\\comedy_series.html", "r", "utf-8")
-soup = BeautifulSoup(file.read(), 'html.parser')
+read_file = codecs.open("C:\\Users\\thier\\ExtractingGloboPlayContent\\comedy_series.html", "r", "utf-8")
+soup = BeautifulSoup(read_file.read(), 'html.parser')
 
+write_file = open("comedy_series.txt", "w", encoding="utf-8")
 results = soup.find_all('span', attrs={'class': 'playkit-thumb__thumb-link-wrapper'})
 for series in results:
     holder = series.find('a')
     title = holder.get('title')
     url_reference = "https://globoplay.globo.com" + holder.get('href')
-    print("Titulo: " + title)
-    print("url: " + url_reference)
+    write_file.write("Titulo: " + title + "\n")
+    write_file.write("url: " + url_reference + "\n")
     
     # Get details from Series
     url = url_reference + "detalhes/"
@@ -30,7 +31,7 @@ for series in results:
     cover = cover[1]
     cover = cover.split("\")")
     url_foto = cover[0]
-    print("url_foto: " + url_foto)
+    write_file.write("url_foto: " + url_foto + "\n")
 
     # get Datasheet
     dataSheet = soup.find('div', attrs={'class': 'title-details-offer'})
@@ -38,7 +39,7 @@ for series in results:
 
     sinopse = dataSheet.find('p', attrs={'class': 'title-details-offer__synopsis-description'})
     sinopse = sinopse.get_text()
-    print("Sinopse: " + sinopse)
+    write_file.write("Sinopse: " + sinopse + "\n")
 
     basic_info = dataSheet.find('div', attrs={'class': 'title-details-offer__basic-info'})
     basic_info = basic_info.find_all('div', attrs={'class': 'title-details-offer-item'})
@@ -53,7 +54,7 @@ for series in results:
         elenco = basic_info[2].get_text()
         elenco = elenco.split(': ')
         elenco = elenco[1]
-    print("Roteiro: " + roteiro + '\n' + "Elenco: " + elenco)
+    write_file.write("Roteiro: " + roteiro + '\n' + "Elenco: " + elenco + "\n")
 
     additional_info = dataSheet.find('div', attrs={'class': 'title-details-offer__additional-info'})
     additional_info = additional_info.find_all('div', attrs={'class': 'title-details-offer-item'})
@@ -75,11 +76,11 @@ for series in results:
         pais = pais.split(': ')
         pais = pais[1]
 
-    print("Gênero: " + genero + '\n' + "Ano de Lançamento: " + ano + '\n' + "País de Origem: " + pais)
-    print('-----------------------------------------------------')
-    print('\n')
-    
+    write_file.write("Gênero: " + genero + '\n' + "Ano de Lançamento: " + ano + '\n' + "País de Origem: " + pais + "\n")
+    write_file.write('-----------------------------------------------------' + "\n")
 
+read_file.close()
+write_file.close()
 
 
 
