@@ -24,6 +24,15 @@ for series in results:
     for script in soup(["script", "style"]):
         script.extract()    # rip it out
 
+    # get photo
+    cover = soup.find('div', attrs={'class': 'playkit-media-cover__banner-background'})
+    cover = cover.get('style')
+    cover = cover.split("(\"")
+    cover = cover[1]
+    cover = cover.split("\")")
+    url_foto = cover[0]
+    print("url_foto: " + url_foto)
+
     # get Datasheet
     dataSheet = soup.find('div', attrs={'class': 'title-details-offer'})
     #print(dataSheet)

@@ -11,8 +11,7 @@ for series in results:
     holder = series.find('a')
     title = holder.get('title')
     url_reference = "https://globoplay.globo.com" + holder.get('href')
-    print(title)
-    print('\n')
+    print("Titulo: " + title)
     print("url: " + url_reference)
     
     # Get details from Series
@@ -23,6 +22,15 @@ for series in results:
     # kill all script and style elements
     for script in soup(["script", "style"]):
         script.extract()    # rip it out
+
+    # get photo
+    cover = soup.find('div', attrs={'class': 'playkit-media-cover__banner-background'})
+    cover = cover.get('style')
+    cover = cover.split("(\"")
+    cover = cover[1]
+    cover = cover.split("\")")
+    url_foto = cover[0]
+    print("url_foto: " + url_foto)
 
     # get Datasheet
     dataSheet = soup.find('div', attrs={'class': 'title-details-offer'})
